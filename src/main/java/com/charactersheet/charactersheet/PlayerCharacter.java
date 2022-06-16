@@ -78,7 +78,7 @@ public class PlayerCharacter {
     private void setModifiers(){
         int[] tempScores = getAttributes();
         for (int i = 0; i < tempScores.length; i++) {
-            double a = (double) tempScores[i];      //cast int[i] to double
+            double a = (double) tempScores[i];      //cast tempScores[i] to double
             double b = Math.floor((a-10)/2);        //calculate modifier  (tempScores[i]-10)/2
             this.modifiers[i] = (int) b;            //assign result to modifier[i]
         }
